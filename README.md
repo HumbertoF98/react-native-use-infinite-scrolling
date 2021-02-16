@@ -1,4 +1,4 @@
-<h1>react-native-nuvem-infinite-scrolling</h1>
+<h1>react-native-infinitescroll</h1>
 
 A react native package developed to implement infinite scrolling in any react-native app.
 
@@ -7,20 +7,20 @@ A react native package developed to implement infinite scrolling in any react-na
 **Install via npm**
 
 ```shell
-npm i react-native-nuvem-infinite-scrolling
+npm i react-native-infinitescroll
 ```
 
 **Install via YARN**
 ```shell
-yarn add react-native-nuvem-infinite-scrolling
+yarn add react-native-infinitescroll
 ```
 
 <h1>Usage</h1>
 
-Import the **InfiniteScroll** component from **react-native-nuvem-infinite-scrolling**: 
+Import the **InfiniteScroll** component from **react-native-infinitescroll**: 
 
 ```shell
-import InfiniteScroll from 'react-native-nuvem-infinite-scrolling'
+import InfiniteScroll from 'react-native-infinitescroll'
 ```
 
 This component accepts 4 parameters / props:
@@ -38,7 +38,7 @@ import { View, Text } from "react-native";
 import {ListItem} from 'native-base';
 import axios from 'axios';
 
-import InfiniteScroll from 'react-native-nuvem-infinite-scrolling';
+import InfiniteScroll from 'react-native-infinitescroll';
 
 const TestNuvemInfiniteScroll = () => {
   const [incidents, setIncidents] = useState([]);

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-nuvem-infinite-scrolling",
+  "name": "react-native-infinitescroll",
   "version": "1.0.0",
   "description": "A react native package for infinite scrolling of list ",
   "main": "index.js",
