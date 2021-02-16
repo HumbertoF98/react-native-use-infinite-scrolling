@@ -1,0 +1,27 @@
+{
+  "name": "react-native-nuvem-infinite-scrolling",
+  "version": "1.0.0",
+  "description": "A react native package for infinite scrolling of list ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HumbertoF98/react-native-infinite-scrolling"
+  },
+  "keywords": [
+    "React",
+    "react-native",
+    "infinite",
+    "scrolling",
+    "FlatList"
+  ],
+  "author": "Kuldeep Singh",
+  "license": "ISC",
+  "homepage": "https://github.com/HumbertoF98/react-native-infinite-scrolling",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
+  },
+  "dependencies": {}
+}
