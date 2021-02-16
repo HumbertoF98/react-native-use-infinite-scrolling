@@ -1,5 +1,5 @@
 {
-  "name": "react-native-infinitescrolling",
+  "name": "react-native-use-infinite-scrolling",
   "version": "1.0.0",
   "description": "A react native package for infinite scrolling of list ",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HumbertoF98/react-native-infinitescrolling"
+    "url": "git+https://github.com/HumbertoF98/react-native-use-infinite-scrolling"
   },
   "keywords": [
     "React",
@@ -19,7 +19,7 @@
   ],
   "author": "Kuldeep Singh",
   "license": "ISC",
-  "homepage": "https://github.com/HumbertoF98/react-native-infinitescrolling",
+  "homepage": "https://github.com/HumbertoF98/react-native-use-infinite-scrolling",
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.58.0"
   },
