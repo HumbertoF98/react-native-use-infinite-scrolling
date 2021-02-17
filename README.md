@@ -40,7 +40,7 @@ import axios from 'axios';
 
 import InfiniteScroll from 'react-native-use-infinite-scrolling';
 
-const TestNuvemInfiniteScroll = () => {
+const ExampleInfiniteScroll = () => {
   const [incidents, setIncidents] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);  
@@ -72,7 +72,7 @@ const TestNuvemInfiniteScroll = () => {
   );
 };
 
-export default TestNuvemInfiniteScroll;
+export default ExampleInfiniteScroll;
 
 ```
 
