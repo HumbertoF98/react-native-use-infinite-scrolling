@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "react-native-use-infinite-scrolling2": ["./src/index"]
+      "react-native-use-infinite-scrolling": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

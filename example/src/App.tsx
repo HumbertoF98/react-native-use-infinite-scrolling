@@ -1,32 +1,60 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import UseInfiniteScrolling2 from 'react-native-use-infinite-scrolling2';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
+import InfiniteScroll from 'react-native-use-infinite-scrolling';
 
+const data = Array.from(Array(50), (_item, i) => ({
+  name: `Person ${i + 1}`,
+}));
+
+const perPage = 15;
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [loading, setLoading] = React.useState(false);
+  const [page, setPage] = React.useState<number>(1);
 
-  React.useEffect(() => {
-    UseInfiniteScrolling2.multiply(3, 7).then(setResult);
-  }, []);
+  const handleLoadMore = () => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setPage((prev) => prev + 1);
+      setLoading(false);
+    }, 3000);
+  };
+
+  const result = data.slice(0, page * perPage);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <InfiniteScroll
+        data={result}
+        isFinish={result.length >= 40}
+        loading={loading}
+        loadingText="Loading..."
+        keyExtractor={(item) => item.name}
+        onLoadMore={() => {
+          handleLoadMore();
+        }}
+        renderItem={({ item, index }) => (
+          <View key={index} style={styles.box}>
+            <Text>{item.name}</Text>
+          </View>
+        )}
+      />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    height: 150,
+    marginHorizontal: 16,
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 16,
   },
 });

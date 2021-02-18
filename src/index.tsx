@@ -1,5 +1,5 @@
-export default {
-  multiply(a: number, b: number) {
-    return Promise.resolve(a * b);
-  },
-};
+import InfiniteScroll, { InfiniteScrollProps } from './InfiniteScroll';
+
+export type { InfiniteScrollProps };
+
+export default InfiniteScroll;
